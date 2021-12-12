@@ -1,17 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import categories from "../temporary_data_files/categories";
 
 function nav_bar() {
   return (
-    <nav className="navbar fixed-top navbar-expand-lg">
+    //<nav className="navbar fixed-top navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg">
       <div className="container">
-        <a className="navbar-brand" href="https://inpd8.csb.app/">
+        <Link to={``} className="navbar-brand">
           <img
             id="brand-logo"
             src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_c315c7fdf027b5d503c5dd733f556813/mentorli.png"
             alt="brand-logo"
           />
           <span className="brand-title">Mentor Meet</span>
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,13 +29,14 @@ function nav_bar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto ml-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a
+              <Link
+                to={``}
                 className="nav-link active"
                 aria-current="page"
                 href="#home-banner"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -46,31 +50,18 @@ function nav_bar() {
                 Categories
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a className="dropdown-item" href="ss">
-                    Development
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="ss">
-                    Business
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="ss">
-                    Design
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="ss">
-                    Marketing
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="ss">
-                    Lifestyle
-                  </a>
-                </li>
+                {categories.map((category) => {
+                  return (
+                    <li>
+                      <Link
+                        to={`category/${category.id}`}
+                        className="dropdown-item"
+                      >
+                        {category.name}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </li>
             <li className="nav-item">

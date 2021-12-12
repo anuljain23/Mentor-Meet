@@ -1,3 +1,6 @@
+/******************************************************************/
+/************************ COMMON STYLING **************************/
+
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -7,6 +10,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/******************* COMMON STYLING ENDS **************************/
+/******************************************************************/
+
+/******************************************************************/
+/****************************** NAVBAR ****************************/
 
 .navbar {
   background: #1b2129d6 !important;
@@ -51,51 +60,33 @@ body {
   background: whitesmoke !important;
 }
 
-section {
-  height: 10vh;
+/**************************** NAVBAR ENDS *************************/
+/******************************************************************/
+
+/******************************************************************/
+/************************* HOME PAGE ******************************/
+
+/************************* HOME PAGE ENDS *************************/
+/******************************************************************/
+
+/******************************************************************/
+/************************* CATEGORY PAGE **************************/
+
+.card-body h1 {
+  font-size: 18px;
+  text-align: left !important;
 }
 
-#home-main {
-  background-color: #191919;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-    url("http://imroz.rainbowit.net/assets/images/bg/bg-image-34.jpg");
+.card-body .img-fluid {
+  width: 100% !important;
+  height: 150px !important;
 }
 
-#home-banner {
-  height: 190vh !important;
-}
+/********************* CATEGORY PAGE ENDS *************************/
+/******************************************************************/
 
-#home-banner #banner-heading {
-  font-size: 95px !important;
-  margin-top: 5%;
-  height: 100%;
-  background: #fd4766;
-  background: var(--color-primary);
-  background: linear-gradient(
-    120deg,
-    #1c99fe 20.69%,
-    #7644ff 50.19%,
-    #fd4766 79.69%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  font-size: 100px;
-  font-weight: 900;
-}
+/******************************************************************/
+/************************* COURSE PAGE ****************************/
 
-#home-demo {
-  background-color: #101010;
-}
-
-#home-cta {
-  background-color: #191919;
-}
-
-#home-features {
-  background-color: #101010;
-}
-
-#home-inner-pages {
-  background-color: #191919;
-}
+/************************* COURSE PAGE ENDS ***********************/
+/******************************************************************/
