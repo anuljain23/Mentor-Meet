@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import categories from "../temporary_data_files/categories";
 
-function nav_bar() {
+function Navbar() {
   return (
     //<nav className="navbar fixed-top navbar-expand-lg">
     <nav className="navbar navbar-expand-lg">
@@ -38,7 +38,7 @@ function nav_bar() {
                 Home
               </Link>
             </li>
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
                 href="#home-banner"
@@ -52,7 +52,7 @@ function nav_bar() {
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 {categories.map((category) => {
                   return (
-                    <li>
+                    <li key={category.id}>
                       <Link
                         to={`category/${category.id}`}
                         className="dropdown-item"
@@ -70,7 +70,7 @@ function nav_bar() {
                 href="#home-features"
                 aria-disabled="true"
               >
-                Login <i class="fa fa-sign-in" aria-hidden="true"></i>
+                Login <i className="fa fa-sign-in" aria-hidden="true"></i>
               </a>
             </li>
             <li className="nav-item">
@@ -79,7 +79,7 @@ function nav_bar() {
                 href="#home-features"
                 aria-disabled="true"
               >
-                Sign Up <i class="fa fa-user-plus"></i>
+                Sign Up <i className="fa fa-user-plus"></i>
               </a>
             </li>
           </ul>
@@ -89,4 +89,4 @@ function nav_bar() {
   );
 }
 
-export default nav_bar;
+export default Navbar;
