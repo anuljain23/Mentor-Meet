@@ -2,3 +2,100 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #1b2129d6 !important;
+}
+
+.navbar-brand {
+  width: 50px;
+}
+
+.brand-title {
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.navbar-brand img {
+  width: 100%;
+}
+
+.navbar a span {
+  color: white;
+}
+
+.navbar-collapse {
+  flex-grow: unset !important;
+  flex-basis: auto !important;
+}
+
+.nav-link {
+  color: whitesmoke !important;
+  font-size: 16px;
+  margin: 8px !important;
+}
+
+.active {
+  color: #fd4766 !important;
+  font-size: 18px;
+}
+
+.navbar-light .navbar-toggler {
+  color: whitesmoke !important;
+  border-color: whitesmoke !important;
+  background: whitesmoke !important;
+}
+
+section {
+  height: 10vh;
+}
+
+#home-main {
+  background-color: #191919;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("http://imroz.rainbowit.net/assets/images/bg/bg-image-34.jpg");
+}
+
+#home-banner {
+  height: 190vh !important;
+}
+
+#home-banner #banner-heading {
+  font-size: 95px !important;
+  margin-top: 5%;
+  height: 100%;
+  background: #fd4766;
+  background: var(--color-primary);
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+#home-demo {
+  background-color: #101010;
+}
+
+#home-cta {
+  background-color: #191919;
+}
+
+#home-features {
+  background-color: #101010;
+}
+
+#home-inner-pages {
+  background-color: #191919;
+}
