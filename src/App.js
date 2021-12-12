@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles.css";
 import NavBar from "./components/Navbar";
 import CategoryScreen from "./screens/Category.screen";
@@ -16,10 +11,10 @@ export default function App() {
       <div id="home-main">
         <Router>
           <NavBar />
-          <Routes>
+          <Switch>
             <Route exact path="/" component={HomeScreen} />
             <Route exact path="/category/:id" component={CategoryScreen} />
-          </Routes>
+          </Switch>
         </Router>
       </div>
     </div>
